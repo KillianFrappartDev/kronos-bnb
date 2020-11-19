@@ -8,8 +8,9 @@ import '../styles/DetailsPage.css';
 
 class DetailsPage extends React.Component {
 
+
     render(){
-        const { title, description, image, rating  } = this.props
+        const { bnbData } = this.props
         return (
             <>
             <div className="split">

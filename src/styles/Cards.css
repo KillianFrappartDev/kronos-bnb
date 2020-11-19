@@ -14,8 +14,9 @@ p {
 }
 
 .center {
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  margin: 5vh;
+  width: 18%;
   display: flex;
   justify-content: center;
   align-items: center;
