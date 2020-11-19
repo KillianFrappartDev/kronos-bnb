@@ -1,4 +1,4 @@
-const ResultPage = props => {
+const ResultPage = (props) => {
   return <h1>Display a list of results matching criterias</h1>;
 };
 
