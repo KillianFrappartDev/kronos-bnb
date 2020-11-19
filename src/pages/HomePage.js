@@ -11,6 +11,8 @@ import '../styles/HomePage.css';
 
 const HomePage = props => {
   const [activeStep, setActiveStep] = useState(0);
+  const [date, setDate] = useState(new Date());
+  const [location, setLocation] = useState('asia');
 
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
@@ -20,14 +22,28 @@ const HomePage = props => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
+  const handleDate = e => {
+    setDate(e.toString().substring(11, 15));
+  };
+
+  const handleLocation = e => {
+    setLocation(e.target.value);
+  };
+
   let main;
   if (activeStep === 0) {
-    main = <DateInput />;
+    main = <DateInput value={date} change={handleDate} />;
   } else if (activeStep === 1) {
-    main = <LocationInput />;
+    main = <LocationInput value={location} change={handleLocation} />;
   } else {
     main = (
-      <Button size="large" variant="outlined" color="primary" endIcon={<SendIcon />}>
+      <Button
+        onClick={props.onSubmit.bind(null, { date, location })}
+        size="large"
+        variant="outlined"
+        color="primary"
+        endIcon={<SendIcon />}
+      >
         Travel
       </Button>
     );
@@ -36,7 +52,7 @@ const HomePage = props => {
   return (
     <section className="home__container">
       <header className="home__header">
-        <img className="home__header-logo" src={logo} width="375px" />
+        <img className="home__header-logo" src={logo} width="500px" alt="logo" />
       </header>
       {main}
       <CustomStepper activeStep={activeStep} back={handleBack} next={handleNext} />

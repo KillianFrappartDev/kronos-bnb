@@ -9,17 +9,18 @@ const LocationInput = props => {
         Where?
       </InputLabel>
       <NativeSelect
-        value={null}
-        onChange={() => {}}
+        value={props.value}
+        onChange={props.change}
         inputProps={{
           name: 'location',
           id: 'location-native-simple'
         }}
       >
-        <option value="asia">Asia</option>
-        <option value="africa">Africa</option>
-        <option value="europa">Europa</option>
-        <option value="america">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Africa">Africa</option>
+        <option value="Europa">Europa</option>
+        <option value="America">America</option>
+        <option value="Space">Space</option>
       </NativeSelect>
     </FormControl>
   );

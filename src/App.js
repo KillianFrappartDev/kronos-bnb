@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import MomentUtils from '@date-io/moment';
+import DateFnsUtils from '@date-io/date-fns';
 import { createMuiTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import teal from '@material-ui/core/colors/teal';
@@ -16,10 +17,16 @@ const darkTheme = createMuiTheme({
 });
 
 function App() {
+  const [travelData, setTravelData] = useState(null);
+
+  const handleSubmit = data => {
+    setTravelData(data);
+  };
+
   return (
     <ThemeProvider theme={darkTheme}>
-      <MuiPickersUtilsProvider utils={MomentUtils}>
-        <HomePage />
+      <MuiPickersUtilsProvider utils={DateFnsUtils}>
+        <HomePage onSubmit={handleSubmit} />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );

@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { DatePicker } from '@material-ui/pickers';
 
-const DateInput = () => {
-  const [selectedDate, handleDateChange] = useState(new Date());
-
-  return <DatePicker views={['year']} label="When?" value={selectedDate} onChange={handleDateChange} />;
+const DateInput = props => {
+  return (
+    <DatePicker
+      maxDate={new Date('2547-01-01')}
+      minDate={new Date('0000-01-01')}
+      views={['year']}
+      label="When?"
+      value={props.value}
+      onChange={props.change}
+    />
+  );
 };
 
 export default DateInput;
