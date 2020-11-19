@@ -1,5 +1,10 @@
-const ResultPage = props => {
-  return <h1>Display a list of results matching criterias</h1>;
-};
+import React, { Component } from "react";
+import Cards from "../components/Cards";
+
+class ResultPage extends Component {
+  render() {
+    return <Cards />;
+  }
+}
 
 export default ResultPage;
