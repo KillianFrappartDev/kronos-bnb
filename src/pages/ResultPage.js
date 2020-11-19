@@ -1,9 +1,13 @@
 import React, { Component } from "react";
-import Cards from "../components/Cards";
+import Card from "../components/Card";
 
 class ResultPage extends Component {
   render() {
-    return <Cards />;
+    return (
+      <div>
+        <Card data={this.props.data} />
+      </div>
+    );
   }
 }
 

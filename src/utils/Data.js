@@ -137,3 +137,5 @@ const bnbData = [
     image: "https://s21858.pcdn.co/wp-content/uploads/2012/12/Recreation.jpg",
   },
 ];
+
+export default bnbData;
