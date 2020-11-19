@@ -1,11 +1,13 @@
-import "../styles/Cards.css";
-import React, { Component } from "react";
+import React, { Component } from 'react';
+
+// Local imports
+import '../styles/Cards.css';
 
 const example = {
-  title: "Storming of the Bastille",
+  title: 'Storming of the Bastille',
   year: 1789,
-  city: "Paris",
-  country: "France",
+  city: 'Paris',
+  country: 'France'
 };
 
 class Cards extends Component {
@@ -18,7 +20,7 @@ class Cards extends Component {
               <div
                 style={{
                   backgroundImage:
-                    'url("https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg")',
+                    'url("https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg")'
                 }}
                 className="property-image"
               >
