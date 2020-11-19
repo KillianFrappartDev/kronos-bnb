@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { MuiPickersUtilsProvider } from "@material-ui/pickers";
-import DateFnsUtils from "@date-io/date-fns";
-import { createMuiTheme } from "@material-ui/core";
-import { ThemeProvider } from "@material-ui/styles";
-import teal from "@material-ui/core/colors/teal";
-import { Switch, Route, withRouter, useHistory } from "react-router-dom";
+import { useState } from 'react';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import DateFnsUtils from '@date-io/date-fns';
+import { createMuiTheme } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
+import teal from '@material-ui/core/colors/teal';
+import { Switch, Route, withRouter, useHistory } from 'react-router-dom';
 
 //Local imports
 import HomePage from './pages/HomePage';
@@ -15,18 +15,19 @@ import "./styles/App.css";
 
 const darkTheme = createMuiTheme({
   palette: {
-    type: "dark",
-    primary: teal,
-  },
+    type: 'dark',
+    primary: teal
+  }
 });
 
 function App(props) {
   const [travelData, setTravelData] = useState(null);
   const history = useHistory();
 
-  const handleSubmit = (data) => {
+  const handleSubmit = data => {
+    console.log(data);
     setTravelData(data);
-    history.push("/Results");
+    history.push('/Results');
   };
 
   return (
@@ -42,7 +43,7 @@ function App(props) {
         <Route path="/Results">
           <ResultPage data={bnbData} />
         </Route>
-        <Route path="/DetailsPage">
+        <Route path="/DetailsPage/:id">
           <DetailsPage data={bnbData} />
         </Route>
       </Switch>
