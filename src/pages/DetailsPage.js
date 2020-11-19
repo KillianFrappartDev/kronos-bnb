@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams } from "react-router-dom";
 
 
 // Local imports
@@ -6,37 +7,35 @@ import '../styles/DetailsPage.css';
 
 
 
-class DetailsPage extends React.Component {
-
-
-    render(){
-        const { bnbData } = this.props
+  const DetailsPage = ({data}) => {
+    const { id } = useParams();
+    console.log(id)
+    const currentCard = data.filter( card => card.id === id)
+    console.log(currentCard)
         return (
             <>
-            <div className="split">
+              <div className="split">
                 <div className="left">
-                <div className="text">
-                    <h1 className="textH1">Storming of the Bastille</h1> 
-                    <p>Paris, France, Europe</p>
-                    ⭐⭐⭐⭐
-                    <h5>This studio has been entirely renovated ans is brand new. The studio was a former bellman loge, it is on the ground floor in a small yard. It has 2 windows, wooden walls, high ceilings, a mezzanina for the bed. it is an amzing place to wath the Storming of the Bastille ans all the beheaded people running around. Really Lovely place</h5>         
-                </div>
+                  <div className="text">
+                      <h1 className="textH1">{currentCard.title}</h1> 
+                      <p>{currentCard.city}, {currentCard.country}, {currentCard.continent}</p>
+                      ⭐⭐⭐⭐ {currentCard.rating}
+                      <h5>{currentCard.description}</h5>         
+                  </div>
                 <div>
                     <h3 className="book">BOOK NOW</h3>
-            
+                      
                 </div>    
                 </div>
-
+          
                 <div className="right">
-                <div className="imageRight">
-                    <img src={'https://i.ebayimg.com/images/g/Vi0AAOSwQXlcPkMx/s-l1600.jpg'} />
+                  <div className="imageRight">
+                      <img src={currentCard.image} />
+                  </div>
                 </div>
-                </div>
-            </div>
-        </>
+              </div>
+          </>
         );
-    };
-    
+  };
   
-}
 export default DetailsPage;
