@@ -158,4 +158,4 @@ const bnbData = [
   }
 ];
 
-// image title year city country
+export default bnbData;
