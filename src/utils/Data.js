@@ -155,6 +155,31 @@ const bnbData = [
     rating: 1.2,
     image:
       'https://www.construire-tendance.com/wp-content/grand-media/image/fa_ade-entr_e-huttes-gauloise-finistere-France.jpg'
+  },
+  {
+    id: 13,
+    title: 'Nuclear fallout shelter',
+    year: 2231,
+    city: 'Los Angeles',
+    country: 'USA',
+    continent: 'America',
+    isTaken: false,
+    description: '',
+    rating: 2.5,
+    image: 'https://i.ytimg.com/vi/v0-7frYF7WE/maxresdefault.jpg'
+  },
+  {
+    id: 14,
+    title: 'Campervan spot near Woodstock',
+    year: 1969,
+    city: 'Bethel',
+    country: 'USA',
+    continent: 'America',
+    isTaken: false,
+    description: '',
+    rating: 3,
+    image:
+      'https://static.cnews.fr/sites/default/files/styles/image_640_360/public/woodstock_essai_5d4d56abd9271.jpg?itok=_GENOfps'
   }
 ];
 
