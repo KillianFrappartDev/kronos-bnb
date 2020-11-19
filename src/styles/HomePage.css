@@ -1,0 +1,9 @@
+.home__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home__header-logo {
+  border-radius: 10px;
+}
