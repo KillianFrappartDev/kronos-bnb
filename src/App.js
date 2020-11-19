@@ -2,7 +2,7 @@
 import HomePage from "./pages/HomePage";
 import ResultPage from "./pages/ResultPage";
 import { Switch, Route, Link, Router, withRouter } from "react-router-dom";
-
+import bnbData from "./utils/Data";
 function App(props) {
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App(props) {
           <HomePage />
         </Route>
         <Route path="/Results">
-          <ResultPage />
+          <ResultPage data={bnbData} />
         </Route>
       </Switch>
     </div>
