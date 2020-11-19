@@ -9,8 +9,8 @@ import { Switch, Route, withRouter, useHistory } from "react-router-dom";
 //Local imports
 import HomePage from "./pages/HomePage";
 import ResultPage from "./pages/ResultPage";
+import DetailsPage from "./pages/DetailsPage";
 import bnbData from "./utils/Data";
-
 import "./styles/App.css";
 
 const darkTheme = createMuiTheme({
@@ -26,7 +26,7 @@ function App(props) {
 
   const handleSubmit = (data) => {
     setTravelData(data);
-    history.push("/Results", travelData);
+    history.push("/Results");
   };
 
   return (
@@ -41,6 +41,9 @@ function App(props) {
         </Route>
         <Route path="/Results">
           <ResultPage data={bnbData} />
+        </Route>
+        <Route path="/DetailsPage/:id">
+          <DetailsPage data={bnbData} />
         </Route>
       </Switch>
     </div>
