@@ -38,7 +38,7 @@ const HomePage = props => {
   } else {
     main = (
       <Button
-        onClick={props.onSubmit.bind(null, { date, location })}
+        onClick={props.onSubmit.bind(null, { date: typeof date === 'string' ? date : '2020', location })}
         size="large"
         variant="outlined"
         color="primary"
