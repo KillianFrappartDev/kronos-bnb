@@ -95,37 +95,26 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const CustomStepper = () => {
+const CustomStepper = props => {
   const classes = useStyles();
-  const [activeStep, setActiveStep] = React.useState(0);
   const steps = ['Pick up a period', 'Select a continent', 'Browse results!'];
-
-  const handleNext = () => {
-    setActiveStep(prevActiveStep => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep(prevActiveStep => prevActiveStep - 1);
-  };
-
-  const handleReset = () => {
-    setActiveStep(0);
-  };
 
   return (
     <div className={classes.root}>
       <div className={classes.actions}>
-        <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
+        <Button disabled={props.activeStep === 0} onClick={props.back} className={classes.button}>
           Back
         </Button>
-        <Button variant="contained" color="primary" onClick={handleNext} className={classes.button}>
-          {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-        </Button>
+        {props.activeStep !== steps.length - 1 && (
+          <Button variant="contained" color="primary" onClick={props.next} className={classes.button}>
+            Next
+          </Button>
+        )}
       </div>
       <Stepper
         style={{ backgroundColor: '#0d0f22' }}
         alternativeLabel
-        activeStep={activeStep}
+        activeStep={props.activeStep}
         connector={<ColorlibConnector />}
       >
         {steps.map(label => (
