@@ -4,7 +4,7 @@ import DateFnsUtils from '@date-io/date-fns';
 import { createMuiTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import teal from '@material-ui/core/colors/teal';
-import { Switch, Route, Link, Router, withRouter, useHistory } from 'react-router-dom';
+import { Switch, Route, withRouter, useHistory } from 'react-router-dom';
 
 //Local imports
 import HomePage from './pages/HomePage';
