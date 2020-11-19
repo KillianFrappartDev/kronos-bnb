@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { useHistory } from "react-router-dom";
 
 // Local imports
 import '../styles/Cards.css';
@@ -11,9 +12,17 @@ const example = {
 };
 
 class Cards extends Component {
+
+  function HomeButton() {
+    let history = useHistory();
+  
+    function handleClick() {
+      history.push("/DetailsPage");
+    }
+
   render() {
     return (
-      <div>
+      <div onClick={this.handleClick()}>
         <div className="center">
           <div className="property-card">
             <a href="#">
