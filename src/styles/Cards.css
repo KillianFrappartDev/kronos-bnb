@@ -3,14 +3,14 @@
   box-sizing: border-box;
 }
 
-h5 {
+.h5-card {
   margin: 0px;
-  font-size: 1.4em;
+  font-size: 2.2em;
   font-weight: 700;
 }
 
-p {
-  font-size: 12px;
+.p-card {
+  font-size: 20px;
 }
 
 .center {
@@ -20,6 +20,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #0d0f22;
 }
 
 /* End Non-Essential  */
@@ -40,8 +41,8 @@ p {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 16px;
   overflow: hidden;
-  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  -webkit-box-shadow: 15px 15px 27px black, -15px -15px 27px #ffffff;
+  box-shadow: 15px 15px 27px black, -15px -15px 27px #ffffff;
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
