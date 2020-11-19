@@ -25,7 +25,6 @@ function App(props) {
   const history = useHistory();
 
   const handleSubmit = data => {
-    console.log(data);
     setTravelData(data);
     history.push('/Results');
   };
