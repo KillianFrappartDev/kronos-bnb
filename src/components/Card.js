@@ -1,19 +1,26 @@
-import "../styles/Cards.css";
 import React, { Component } from "react";
+import { useHistory } from "react-router-dom";
 
-class Card extends Component {
-  constructor(props) {
-    super(props);
-    console.log(props.data);
-  }
-  render() {
+// Local imports
+import '../styles/Cards.css';
+
+
+const Card = (props) => {
+
+  const history = useHistory();
+
+  const handleSubmit = (id) => {
+    history.push("/DetailsPage/"+id);
+  };
+  
+
     return (
       <>
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
-          {this.props.data.map((item) => (
-            <div className="center" key={item.id}>
+        <div  style={{ display: "flex", flexWrap: "wrap" }}>
+          {props.data.map((item) => (
+            <div onClick={handleSubmit.bind(null, item.id)} className="center" key={item.id}>
               <div className="property-card">
-                <a href="#">
+                <a>
                   <div
                     style={{
                       backgroundImage: `url(${item.image})`,
@@ -31,7 +38,7 @@ class Card extends Component {
                     country : {item.country} <br />
                   </p>
                 </div>
-                <a href="#">
+                <a>
                   <div className="property-social-icons"></div>
                 </a>
               </div>
@@ -40,7 +47,7 @@ class Card extends Component {
         </div>
       </>
     );
-  }
+  
 }
 
 export default Card;
