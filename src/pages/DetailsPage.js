@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
+import { Rating } from '@material-ui/lab';
 
 
 // Local imports
@@ -19,7 +20,7 @@ import '../styles/DetailsPage.css';
                   <div className="text">
                       <h1 className="textH1">{currentCard[0].title}</h1> 
                       <p>{currentCard[0].city}, {currentCard[0].country}, {currentCard[0].continent}</p>
-                      ⭐⭐⭐⭐ {currentCard[0].rating}
+                      <Rating name="read-only" value={currentCard[0].rating} readOnly />
                       <h5>{currentCard[0].description}</h5>         
                   </div>
                 <div>
