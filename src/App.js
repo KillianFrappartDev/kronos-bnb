@@ -9,6 +9,7 @@ import { Switch, Route, withRouter, useHistory } from 'react-router-dom';
 //Local imports
 import HomePage from './pages/HomePage';
 import ResultPage from './pages/ResultPage';
+import DetailsPage from './pages/DetailsPage';
 import './styles/App.css';
 
 const darkTheme = createMuiTheme({
@@ -39,6 +40,9 @@ function App(props) {
         </Route>
         <Route path="/Results">
           <ResultPage />
+        </Route>
+        <Route path="/DetailsPage">
+          <DetailsPage />
         </Route>
       </Switch>
     </div>
