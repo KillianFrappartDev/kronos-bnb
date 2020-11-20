@@ -54,7 +54,7 @@ function App(props) {
           </ThemeProvider>
         </Route>
         <Route path="/Results">
-          <ResultPage data={filterData()} />
+          <ResultPage data={filterData()} yearUser={travelData} />
         </Route>
         <Route path="/DetailsPage/:id">
           <DetailsPage data={bnbData} />
