@@ -130,7 +130,7 @@ const bnbData = [
     rating: 4.23,
     image:
       "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1319&q=80",
-    coords: { lat: 41.015137, lng: 28.979530 },
+    coords: { lat: 41.015137, lng: 28.97953 },
   },
   {
     id: 10,
@@ -215,7 +215,7 @@ const bnbData = [
     rating: 3,
     image:
       "https://images.unsplash.com/photo-1558724490-51ca9494768e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 51.386998452, lng: 30.092666296 },
   },
   {
     id: 16,
@@ -229,7 +229,7 @@ const bnbData = [
     rating: 4,
     image:
       "https://upload.wikimedia.org/wikipedia/commons/a/a8/Place_du_Vieux-March%C3%A9%2C_Rouen_3.JPG",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 49.443489, lng: 1.0885 },
   },
   {
     id: 17,
@@ -244,7 +244,7 @@ const bnbData = [
     rating: 3,
     image:
       "https://upload.wikimedia.org/wikipedia/commons/d/d9/1er_enceinte_Tour_de_Villers_Bxl.JPG",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 50.85045, lng: 4.34878 },
   },
   {
     id: 18,
@@ -259,7 +259,7 @@ const bnbData = [
     rating: 0,
     image:
       "https://images.unsplash.com/photo-1596491690105-2916ddc03050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 44.185909, lng: -75.051003 },
   },
 ];
 
