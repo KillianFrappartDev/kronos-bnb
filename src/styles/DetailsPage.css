@@ -49,6 +49,14 @@
     cursor: pointer;
     border-radius: 5px;
   }
+  .centeredBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+  
+  }
+
   .buttonBook {
     background-color: #0d0f22;
     color: #ffc107; 

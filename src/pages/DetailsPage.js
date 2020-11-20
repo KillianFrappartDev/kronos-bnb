@@ -32,7 +32,7 @@ const DetailsPage = ({ data }) => {
             <Rating name="read-only" value={currentCard[0].rating} readOnly />
             <h5>{currentCard[0].description}</h5>
           </div>
-          <div>
+          <div className="centeredBtn">
             <button className="book buttonBook">BOOK NOW</button>
           </div>
         </div>
