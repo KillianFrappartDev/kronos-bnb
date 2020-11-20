@@ -1,5 +1,11 @@
-const DetailsPage = props => {
-  return <h1>Details of the event/accomodation the user clicked on</h1>;
-};
+import React from 'react'
 
-export default DetailsPage;
+const DetailsPage = (props)=> {
+  return (
+    <div>
+      <h1>Details of the event/accomodation the user clicked on</h1>
+    </div>
+  )
+}
+
+export default DetailsPage; 
