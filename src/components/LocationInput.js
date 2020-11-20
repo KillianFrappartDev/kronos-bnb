@@ -20,7 +20,7 @@ const LocationInput = props => {
         <option value="Asia">Asia</option>
         <option value="Africa">Africa</option>
         <option value="Europe">Europe</option>
-        <option value="Mars">Space</option>
+        <option value="Space">Space</option>
       </NativeSelect>
     </FormControl>
   );

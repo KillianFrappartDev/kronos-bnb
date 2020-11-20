@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Rating } from '@material-ui/lab';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 // Local imports
+import ModalBook from '../components/ModalBook';
 import FabMap from '../components/FabMap';
 import ModalMap from '../components/ModalMap';
 import '../styles/DetailsPage.css';
@@ -11,17 +12,18 @@ import '../styles/DetailsPage.css';
 const DetailsPage = ({ data }) => {
   const { id } = useParams();
   const [open, setOpen] = useState(false);
+  const [book, setBook] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
   };
-  
+
   const handleClose = () => {
     setOpen(false);
   };
 
   const currentCard = data.filter(card => card.id == id);
-  
+
   return (
     <>
       <div className="split">
@@ -35,11 +37,9 @@ const DetailsPage = ({ data }) => {
             <h5>{currentCard[0].description}</h5>
           </div>
           <div className="centeredBtn">
-                           <Link to ={{
-                        pathname: "/ModalBook/"+id
-                      }}>
-                    <button className="book buttonBook">BOOK NOW</button>
-                </Link>
+            <button onClick={() => setBook(prev => !prev)} className="book buttonBook">
+              BOOK NOW
+            </button>
           </div>
         </div>
 
@@ -49,11 +49,11 @@ const DetailsPage = ({ data }) => {
           </div>
         </div>
       </div>
+      {book && <ModalBook close={() => setBook(false)} />}
       <ModalMap center={currentCard[0].coords} open={open} onClose={handleClose} />
       <FabMap onClick={handleOpen} />
     </>
   );
 };
 
-  
 export default DetailsPage;
