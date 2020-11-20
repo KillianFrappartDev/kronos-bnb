@@ -32,9 +32,9 @@ const bnbData = [
     id: 3,
     title: "Tiny House on Mars",
     year: 2572,
-    city: "Mars",
+    city: "Sector 2",
     country: "Mars",
-    continent: "Mars",
+    continent: "Space",
     isTaken: false,
     description:
       "Beautiful tiny house en Mars With incredible view on the martian desert. Two minutes away from Elon Musk Penthouse.",

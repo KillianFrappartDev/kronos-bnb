@@ -1,5 +1,7 @@
-import React, { Component } from "react";
-import Card from "../components/Card";
+import React, { Component } from 'react';
+
+// Local imports
+import Card from '../components/Card';
 
 class ResultPage extends Component {
   render() {
