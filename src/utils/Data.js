@@ -24,7 +24,8 @@ const bnbData = [
     description:
       "Lovely House in Florence where you the 2nd floor is available. The 1st floor is occupied by the owner Mr. Da Vinci.",
     rating: 3.89,
-    image:'https://images.unsplash.com/photo-1516186366443-0744a82bffef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+    image:
+      "https://images.unsplash.com/photo-1516186366443-0744a82bffef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
     coords: { lat: 43.77925, lng: 11.24626 },
   },
   {
@@ -38,7 +39,8 @@ const bnbData = [
     description:
       "Beautiful tiny house en Mars With incredible view on the martian desert. Two minutes away from Elon Musk Penthouse.",
     rating: 4.5,
-    image:'https://images.unsplash.com/photo-1571769267292-e24dfadebbdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1367&q=80',
+    image:
+      "https://images.unsplash.com/photo-1571769267292-e24dfadebbdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1367&q=80",
     coords: { lat: 0, lng: 0 },
   },
   {
@@ -52,8 +54,9 @@ const bnbData = [
     description:
       "Really nice hut in the forest. Be carrefull at night because of the wolves ... and also the neighbour that kidnapped my wife a couple of time",
     rating: 2.67,
-    image: 'https://images.unsplash.com/photo-1564429247506-322ee8fc5190?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    coords: { lat: 49.460983, lng: 11.061859 }
+    image:
+      "https://images.unsplash.com/photo-1564429247506-322ee8fc5190?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    coords: { lat: 49.460983, lng: 11.061859 },
   },
   {
     id: 5,
@@ -66,8 +69,9 @@ const bnbData = [
     description:
       "Rectangular hut with an open doorway onto the patio, the house backed onto the street. The neighbourhood is quiet except when the Hernán Cortés and his Spanish conquistadors have drinks outside.",
     rating: 3.9,
-    image:'https://images.unsplash.com/photo-1503187680590-525b6e7a793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80',
-    coords: { lat: 0, lng: 0 }
+    image:
+      "https://images.unsplash.com/photo-1503187680590-525b6e7a793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80",
+    coords: { lat: 0, lng: 0 },
   },
   {
     id: 6,
@@ -79,8 +83,9 @@ const bnbData = [
     isTaken: false,
     description: "Beautiful house in Egypte with fantastic view with pyramids",
     rating: 4.48,
-    image: 'https://images.unsplash.com/photo-1557640047-75c97a5f1ea4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80',
-    coords: { lat: 0, lng: 0 }
+    image:
+      "https://images.unsplash.com/photo-1557640047-75c97a5f1ea4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80",
+    coords: { lat: 0, lng: 0 },
   },
   {
     id: 7,
@@ -102,14 +107,15 @@ const bnbData = [
     title: "Ryad Bahia",
     year: 1900,
     city: "Marrakech",
-    country: "Maorocco",
+    country: "Morocco",
     continent: "Africa",
     isTaken: false,
     description:
       " An inspiring place, Ryad Bahia is a place were you live, eat, sleep and relax. A fantastic place with 3 rooms, two minutes walk from the magic square of Jemaa Elfna  ",
     rating: 4.1,
-    image: 'https://images.unsplash.com/photo-1548018560-c7196548e84b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
-    coords: { lat: 0, lng: 0 }
+    image:
+      "https://images.unsplash.com/photo-1548018560-c7196548e84b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+    coords: { lat: 0, lng: 0 },
   },
   {
     id: 9,
@@ -123,8 +129,8 @@ const bnbData = [
       " A big house with a fantsatic view sea view, just a five minutes to the Blue Mosque and Hagia Sofia  ",
     rating: 4.23,
     image:
-      'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1319&q=80',
-    coords: { lat: 0, lng: 0 }
+      "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1319&q=80",
+    coords: { lat: 0, lng: 0 },
   },
   {
     id: 10,
@@ -137,8 +143,9 @@ const bnbData = [
     description:
       "Welcoming family in Nazareth. The house is not really big but the son washes feet very well.",
     rating: 3.76,
-    image: 'https://images.unsplash.com/photo-1581080565335-47b4b5e7abf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
-    coords: { lat: 0, lng: 0 }
+    image:
+      "https://images.unsplash.com/photo-1581080565335-47b4b5e7abf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+    coords: { lat: 0, lng: 0 },
   },
   {
     id: 11,
@@ -164,8 +171,9 @@ const bnbData = [
     isTaken: false,
     description: "",
     rating: 1.2,
-    image:'https://images.unsplash.com/photo-1500231261460-8db8e9f334e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    coords: { lat: 0, lng: 0 }
+    image:
+      "https://images.unsplash.com/photo-1500231261460-8db8e9f334e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    coords: { lat: 0, lng: 0 },
   },
   {
     id: 13,
@@ -177,8 +185,9 @@ const bnbData = [
     isTaken: false,
     description: "",
     rating: 2.5,
-    image: 'https://images.unsplash.com/photo-1567583789793-87f44f80ab61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    coords: { lat: 0, lng: 0 }
+    image:
+      "https://images.unsplash.com/photo-1567583789793-87f44f80ab61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    coords: { lat: 0, lng: 0 },
   },
   {
     id: 14,
@@ -190,9 +199,9 @@ const bnbData = [
     isTaken: false,
     description: "",
     rating: 3,
-    image:'https://www.cbc.ca/passionateeye/content/images/woodstock_1920.jpg',
-    coords: { lat: 0, lng: 0 }
-  }
+    image: "https://www.cbc.ca/passionateeye/content/images/woodstock_1920.jpg",
+    coords: { lat: 0, lng: 0 },
+  },
 ];
 
 export default bnbData;
