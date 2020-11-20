@@ -69,13 +69,7 @@ class ModalBook extends Component {
                   <Button className="send" onClick={() => this.handleModal()}>
                     Submit
                   </Button>
-                  {this.state.show ? (
-                    <Message
-                      handleShow={() => this.handleShow()}
-                      name={this.state.firstName}
-                      lastName={this.state.lastName}
-                    />
-                  ) : null}
+                  {this.state.show ? <Message handleShow={() => this.handleShow()} /> : null}
                 </form>
               </div>
             </div>

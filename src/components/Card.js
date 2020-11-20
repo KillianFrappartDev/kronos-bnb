@@ -6,7 +6,7 @@ import '../styles/Cards.css';
 
 const Card = props => {
   const history = useHistory();
-  console.log(props)
+  console.log(props);
 
   const handleSubmit = id => {
     history.push('/DetailsPage/' + id);
@@ -29,9 +29,9 @@ const Card = props => {
               <div className="property-description">
                 <h5 className="h5-card">{item.title}</h5>
                 <p className="p-card">
-                  year : {item.year} <br />
-                  city : {item.city} <br />
-                  country : {item.country} <br />
+                  🕐 : {item.year} <br />
+                  📍 : {item.city} <br />
+                  🌍 : {item.country} <br />
                 </p>
               </div>
               <div className="property-social-icons"></div>

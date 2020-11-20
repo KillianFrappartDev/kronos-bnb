@@ -35,7 +35,7 @@ function App(props) {
     }
     return bnbData.filter(item => {
       const dif = Math.abs(item.year - travelData.date);
-      if (dif <= 300 && item.continent === travelData.location) {
+      if (dif <= 400 && item.continent === travelData.location) {
         return true;
       } else {
         return false;

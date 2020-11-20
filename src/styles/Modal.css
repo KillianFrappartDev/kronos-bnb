@@ -16,11 +16,8 @@
   transform: translate(-50%, -50%);
 }
 .wrapper {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 300px;
-  padding: 0 20px;
+  padding: 20px;
 }
 .checkbox {
   display: flex;
@@ -107,18 +104,18 @@ Button {
   color: #fff;
   left: 45px;
 }
-.Modal Button{
+.Modal Button {
   width: 35%;
   height: 12%;
   font-size: 9px;
-  text-transform:uppercase; 
+  text-transform: uppercase;
   cursor: pointer;
   margin-top: 12px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 .Modal label {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -134,9 +131,9 @@ Button {
   display: flex;
   justify-content: center;
   align-items: center;
- }
- .Modal label {
+}
+.Modal label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
   text-align: center;
- } 
+}
