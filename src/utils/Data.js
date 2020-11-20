@@ -8,7 +8,7 @@ const bnbData = [
     continent: "Europe",
     isTaken: true,
     description:
-      "This studio has been entirely renovated ans is brand new. The studio was a former bellman loge, it is on the ground floor in a small yard. It has 2 windows, wooden walls, high ceilings, a mezzanina for the bed. it is an amzing place to wath the Storming of the Bastille ans all the beheaded people running around. Really Lovely place ",
+      "This studio has been entirely renovated ans is brand new. It is an amzing place to wath the Storming of the Bastille ans all the beheaded people running around. Really Lovely place ",
     rating: 4.16,
     image: "https://i.ebayimg.com/images/g/Vi0AAOSwQXlcPkMx/s-l1600.jpg",
     coords: { lat: 48.8534, lng: 2.3488 },
@@ -71,7 +71,7 @@ const bnbData = [
     rating: 3.9,
     image:
       "https://images.unsplash.com/photo-1503187680590-525b6e7a793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 20.659698, lng: -103.349609 },
   },
   {
     id: 6,
@@ -85,7 +85,7 @@ const bnbData = [
     rating: 4.48,
     image:
       "https://images.unsplash.com/photo-1557640047-75c97a5f1ea4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 30.033333, lng: 31.233334 },
   },
   {
     id: 7,
@@ -100,7 +100,7 @@ const bnbData = [
     rating: 2.56,
     image:
       "https://images.unsplash.com/photo-1600661991570-ccd9563faaaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 52.520008, lng: 13.404954 },
   },
   {
     id: 8,
@@ -115,7 +115,7 @@ const bnbData = [
     rating: 4.1,
     image:
       "https://images.unsplash.com/photo-1548018560-c7196548e84b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 31.669746, lng: -7.973328 },
   },
   {
     id: 9,
@@ -130,7 +130,7 @@ const bnbData = [
     rating: 4.23,
     image:
       "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1319&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 41.015137, lng: 28.979530 },
   },
   {
     id: 10,
@@ -145,7 +145,7 @@ const bnbData = [
     rating: 3.76,
     image:
       "https://images.unsplash.com/photo-1581080565335-47b4b5e7abf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 32.699635, lng: 35.303547 },
   },
   {
     id: 11,
@@ -159,7 +159,7 @@ const bnbData = [
     rating: 4.9,
     image:
       "https://img.over-blog-kiwi.com/1/04/49/45/20181026/ob_6c1a3f_titanic-via-encyclopedia-titanica-2.jpg",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 41.726931, lng: -49.948253 },
   },
   {
     id: 12,
@@ -173,7 +173,7 @@ const bnbData = [
     rating: 1.2,
     image:
       "https://images.unsplash.com/photo-1500231261460-8db8e9f334e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 44.836151, lng: -0.580816 },
   },
   {
     id: 13,
@@ -187,20 +187,20 @@ const bnbData = [
     rating: 2.5,
     image:
       "https://images.unsplash.com/photo-1567583789793-87f44f80ab61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 34.052235, lng: -118.243683 },
   },
   {
     id: 14,
     title: "Campervan spot near Woodstock",
     year: 1969,
-    city: "Bethel",
+    city: "Woodstock",
     country: "USA",
     continent: "America",
     isTaken: false,
     description: "",
     rating: 3,
     image: "https://www.cbc.ca/passionateeye/content/images/woodstock_1920.jpg",
-    coords: { lat: 0, lng: 0 },
+    coords: { lat: 41.4775, lng: -74.3636 },
   },
 ];
 
