@@ -7,6 +7,7 @@ import teal from '@material-ui/core/colors/teal';
 import { Switch, Route, withRouter, useHistory } from 'react-router-dom';
 
 //Local imports
+import ModalBook from './pages/ModalBook'
 import HomePage from './pages/HomePage';
 import ResultPage from './pages/ResultPage';
 import DetailsPage from './pages/DetailsPage';
@@ -54,10 +55,13 @@ function App(props) {
           </ThemeProvider>
         </Route>
         <Route path="/Results">
-          <ResultPage data={filterData()} />
+          <ResultPage data={filterData()} yearUser={travelData} />
         </Route>
         <Route path="/DetailsPage/:id">
           <DetailsPage data={bnbData} />
+        </Route>
+        <Route path="/ModalBook/:id" >
+          <ModalBook/>
         </Route>
       </Switch>
     </div>

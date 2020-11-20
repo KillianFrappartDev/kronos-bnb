@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Rating } from '@material-ui/lab';
+import { Link } from 'react-router-dom'
 
 // Local imports
 import FabMap from '../components/FabMap';
@@ -14,7 +15,7 @@ const DetailsPage = ({ data }) => {
   const handleOpen = () => {
     setOpen(true);
   };
-
+  
   const handleClose = () => {
     setOpen(false);
   };
@@ -34,7 +35,11 @@ const DetailsPage = ({ data }) => {
             <h5>{currentCard[0].description}</h5>
           </div>
           <div className="centeredBtn">
-            <button className="book buttonBook">BOOK NOW</button>
+                           <Link to ={{
+                        pathname: "/ModalBook/"+id
+                      }}>
+                    <h3 className="book">BOOK NOW</h3>
+                </Link>
           </div>
         </div>
 

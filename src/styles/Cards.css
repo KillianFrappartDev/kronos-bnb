@@ -5,19 +5,18 @@
 
 .h5-card {
   margin: 0px;
-  font-size: 2.2em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 .p-card {
   font-size: 20px;
 }
-.display{
-  height: 100vh;
+.display {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .center {
   height: auto;
@@ -104,6 +103,10 @@
 }
 .property-card:hover .property-image {
   height: 18em;
+}
+
+.property-card:hover .property-card {
+  background-size: cover;
 }
 
 .property-card:hover .property-social-icons {
