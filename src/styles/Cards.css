@@ -12,7 +12,13 @@
 .p-card {
   font-size: 20px;
 }
-
+.display{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .center {
   height: auto;
   margin: 5vh;
@@ -41,8 +47,8 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 16px;
   overflow: hidden;
-  -webkit-box-shadow: 15px 15px 27px black, -15px -15px 27px black;
-  box-shadow: 15px 15px 27px black, -15px -15px 27px black;
+  /* -webkit-box-shadow: 15px 15px 27px black, -15px -15px 27px #ffffff; */
+  /* box-shadow: 15px 15px 27px black, -15px -15px 27px #ffffff; */
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
@@ -106,10 +112,12 @@
 
 .property-card:hover .property-social-icons {
   background-color: white;
+  border-radius: 50px;
 }
 
 .property-card:hover .property-social-icons:hover {
-  background-color: blue;
+  /* background-color: blue; */
+  border-radius: 50px;
   cursor: pointer;
 }
 

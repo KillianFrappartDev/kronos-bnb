@@ -37,7 +37,7 @@ const ModalMap = props => {
       >
         <Fade in={props.open}>
           <div className={classes.paper}>
-            <Map center={{ lat: -34.397, lng: 150.644 }} />
+            <Map center={props.center} />
           </div>
         </Fade>
       </Modal>

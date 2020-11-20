@@ -1,59 +1,88 @@
-/* Split the screen in half */
+/* Split the screen in half /
+
 
 .split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-}
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  }
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #0d0f22;
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  color: #d5d9e9;
-}
+  / Control the left side /
+  .left {
+    left: 0;
+    background-color: #0d0f22;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: #d5d9e9;
 
-.text {
-  text-align: right;
-  padding: 20px;
-}
-.textH1 {
-  font-size: 90px;
-}
+  }
 
-.book {
-  text-align: center;
-  font-size: 25px;
-}
-.book:hover {
-  color: #7288eb;
-}
+  .text{
+    text-align: right;
+    padding: 20px; 
+    font-size: 25px;
+  }
+  .textH1{
+    font-size: 90px;
+  }
 
-/* Control the right side */
-.right {
-  right: 0;
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-}
+  .book{
+    text-align: center;
+    font-size: 25px;
+    background-color: #ffc107; 
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .centeredBtn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 
-.imageRight {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  }
+
+  .buttonBook {
+    background-color: #0d0f22;
+    color: #ffc107; 
+    border: 2px solid #ffc107;
+  }
+
+  .buttonBook:hover {
+    background-color:#ffc107;
+    color: black;
+  }
+
+  / Control the right side */
+  .right {
+    right: 0;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+
+  }
+
+  .imageRight{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
