@@ -38,7 +38,7 @@ const DetailsPage = ({ data }) => {
                            <Link to ={{
                         pathname: "/ModalBook/"+id
                       }}>
-                    <h3 className="book">BOOK NOW</h3>
+                    <button className="book buttonBook">BOOK NOW</button>
                 </Link>
           </div>
         </div>
