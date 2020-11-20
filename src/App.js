@@ -27,6 +27,7 @@ function App(props) {
   const handleSubmit = (data) => {
     setTravelData(data);
     history.push("/Results");
+    console.log(data)
   };
 
   const filterData = () => {

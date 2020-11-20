@@ -10,9 +10,8 @@ import '../styles/DetailsPage.css';
 
   const DetailsPage = ({data}) => {
     const { id } = useParams();
-    console.log(id)
     const currentCard = data.filter( card => card.id == id)
-    console.log(currentCard[0])
+
         return (
             <>
               <div className="split">
@@ -23,9 +22,9 @@ import '../styles/DetailsPage.css';
                       <Rating name="read-only" value={currentCard[0].rating} readOnly />
                       <h5>{currentCard[0].description}</h5>         
                   </div>
-                <div>
-                  <button className="book buttonBook">BOOK NOW</button>                   
-                </div>    
+                  <div>
+                    <button className="book buttonBook">BOOK NOW</button>                   
+                  </div>    
                 </div>
           
                 <div className="right">

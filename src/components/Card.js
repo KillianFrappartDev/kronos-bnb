@@ -6,9 +6,11 @@ import "../styles/Cards.css";
 
 const Card = (props) => {
   const history = useHistory();
+  console.log(props)
 
   const handleSubmit = (id) => {
     history.push("/DetailsPage/" + id);
+    console.log(id)
   };
 
   return (
