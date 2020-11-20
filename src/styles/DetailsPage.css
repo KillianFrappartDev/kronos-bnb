@@ -7,8 +7,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    overflow-x: hidden;
-  
+    overflow-x: hidden;  
   }
   
   /* Control the left side */
@@ -29,6 +28,7 @@
   .text{
     text-align: right;
     padding: 20px; 
+    font-size: 25px;
   }
   .textH1{
     font-size: 90px;
@@ -51,9 +51,8 @@
   }
   .centeredBtn{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-self: flex-end;
+    align-self: center;
   
   }
 

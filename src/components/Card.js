@@ -14,7 +14,7 @@ const Card = props => {
 
   return (
     <>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div className="display" style={{ display: 'flex', flexWrap: 'wrap' }}>
         {props.data.map(item => (
           <div onClick={handleSubmit.bind(null, item.id)} className="center" key={item.id}>
             <div className="property-card">

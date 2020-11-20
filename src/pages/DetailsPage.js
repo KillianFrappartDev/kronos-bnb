@@ -20,6 +20,7 @@ const DetailsPage = ({ data }) => {
   };
 
   const currentCard = data.filter(card => card.id == id);
+  
   return (
     <>
       <div className="split">
