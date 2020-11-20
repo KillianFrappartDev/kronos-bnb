@@ -12,12 +12,11 @@
 .p-card {
   font-size: 20px;
 }
-.display{
-  height: 100vh;
+.display {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .center {
   height: auto;
