@@ -5,6 +5,7 @@ import { createMuiTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 import teal from "@material-ui/core/colors/teal";
 import { Switch, Route, withRouter, useHistory } from "react-router-dom";
+import ModalBook from './pages/ModalBook'
 
 //Local imports
 import HomePage from "./pages/HomePage";
@@ -44,6 +45,9 @@ function App(props) {
         </Route>
         <Route path="/DetailsPage/:id">
           <DetailsPage data={bnbData} />
+        </Route>
+        <Route path="/ModalBook/:id" >
+          <ModalBook/>
         </Route>
       </Switch>
     </div>

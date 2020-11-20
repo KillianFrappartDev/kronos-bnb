@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import './ModalCss.css'
 import Logo from "./Logo.png"
 import Message from './Message'
-import { Button, Modal } from 'react-bootstrap'
+import { Button} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import '../styles/ModalCss.css'
 
 
  class ModalBook extends Component {
@@ -10,8 +11,9 @@ import { Button, Modal } from 'react-bootstrap'
          super(props)  
          this.state = {
             firstName: "",
-            lastName: "",
-            show: false
+                lastName: "",
+                    showMsg:true,
+                        show: false,
             }
      }
      handleNameChange = e => {
@@ -23,14 +25,22 @@ import { Button, Modal } from 'react-bootstrap'
      handleModal(){
         this.setState({ show: !this.state.show})
     }
-   
-   
-     
+
+    handleShow(){
+        this.setState({ show: false})
+    }
     render() {
         return (
-            <div className="bg-modal">
-                <div className="wrapper">
-                    <div className="content-form">
+            <div className="bg-modal">             
+                <div className="wrapper">                
+                    <Link to ={{
+                            pathname: "/Results"
+                            }}> 
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </Link>
+                    <div className="content-form">                  
                         <div className="input-fields">
                             <img src={Logo} className="logo"/>
                             <form>
@@ -46,25 +56,16 @@ import { Button, Modal } from 'react-bootstrap'
                             <input type="text"  className="input" placeholder="Adress email"></input>
                             <input type="text"  className="input" placeholder="Mobile number"></input>
                             <Button className="send" onClick={()=>this.handleModal()}>Submit</Button>
-                                        {/* <Modal  show={this.state.show}>
-                                            <Modal.Body> 
-                                                Thank your for booking {this.state.firstName}
-                                            </Modal.Body>
-                                            <Modal.Footer>
-                                                <Button onClick={()=>this.handleModal()}> Close</Button>
-                                            </Modal.Footer>
-                                        </Modal>  */}
                                     {this.state.show ? <Message 
-                                                        onclick={this.handleModal} 
+                                                        handleShow={()=>this.handleShow()}
                                                         name={this.state.firstName}
-                                                        lastName={this.state.lastName} /> : null }
+                                                        lastName={this.state.lastName} /> : null}
+                                                     
                             </form>
                         </div>
                     </div>
                 </div>
             </div> 
-            
-
         )
     }
 }
@@ -81,40 +82,3 @@ export default ModalBook
 
 
 
-
-{/* <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Book your home</h5>
-                        </div>
-                        <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">First name*: </label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control input-sm" id="inputsm" aria-describedby="emailHelp"></input>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Last Name*: </label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-                            </div> <div class="form-group">
-                                <label for="exampleInputEmail1">Email adress*: </label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Mobile number*: </label>
-                            </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
