@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Rating } from '@material-ui/lab';
 
 // Local imports
+import FabMap from '../components/FabMap';
+import ModalMap from '../components/ModalMap';
 import '../styles/DetailsPage.css';
 
 const DetailsPage = ({ data }) => {
   const { id } = useParams();
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const currentCard = data.filter(card => card.id == id);
   return (
     <>
@@ -31,6 +43,8 @@ const DetailsPage = ({ data }) => {
           </div>
         </div>
       </div>
+      <ModalMap center={currentCard[0].coords} open={open} onClose={handleClose} />
+      <FabMap onClick={handleOpen} />
     </>
   );
 };
