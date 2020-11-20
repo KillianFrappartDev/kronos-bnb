@@ -202,6 +202,65 @@ const bnbData = [
     image: "https://www.cbc.ca/passionateeye/content/images/woodstock_1920.jpg",
     coords: { lat: 41.4775, lng: -74.3636 },
   },
+  {
+    id: 15,
+    title: "studio in Chernobyl",
+    year: 1981,
+    city: "Prypiat",
+    country: "Ukraine",
+    continent: "Europe",
+    isTaken: false,
+    description:
+      "Studio located in Chernobyl before it gets yoinked by the nuclear power plant's explosion, near the unfamous big Wheel",
+    rating: 3,
+    image:
+      "https://images.unsplash.com/photo-1558724490-51ca9494768e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    coords: { lat: 0, lng: 0 },
+  },
+  {
+    id: 16,
+    title: "Loft with Jeanne d'Arc pyre's view",
+    year: 1431,
+    city: "Rouen",
+    country: "France",
+    continent: "Europe",
+    isTaken: false,
+    description: `nice loft with balcony, 3 chambers, direct view on the execution of Jeanne "La Pucelle" d'Arc. `,
+    rating: 4,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a8/Place_du_Vieux-March%C3%A9%2C_Rouen_3.JPG",
+    coords: { lat: 0, lng: 0 },
+  },
+  {
+    id: 17,
+    title: "Room inside Villers Tower",
+    year: 1500,
+    city: "Brussels",
+    country: "Belgium",
+    continent: "Europe",
+    isTaken: false,
+    description:
+      "Luxury room amenaged inside the enclosure of brussels before his destruction",
+    rating: 3,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/1er_enceinte_Tour_de_Villers_Bxl.JPG",
+    coords: { lat: 0, lng: 0 },
+  },
+  {
+    id: 18,
+    title: "Appartment at the top of a tower",
+    year: 2001,
+    city: "New-York",
+    country: "United-state",
+    continent: "America",
+    isTaken: false,
+    description:
+      "Good looking appartment in a tower near his twin, view on all the city. Plane might fly near you.",
+    rating: 0,
+    image:
+      "https://images.unsplash.com/photo-1596491690105-2916ddc03050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80",
+    coords: { lat: 0, lng: 0 },
+  },
 ];
 
 export default bnbData;
