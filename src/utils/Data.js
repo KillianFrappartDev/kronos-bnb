@@ -10,7 +10,8 @@ const bnbData = [
     description:
       'This studio has been entirely renovated ans is brand new. The studio was a former bellman loge, it is on the ground floor in a small yard. It has 2 windows, wooden walls, high ceilings, a mezzanina for the bed. it is an amzing place to wath the Storming of the Bastille ans all the beheaded people running around. Really Lovely place ',
     rating: 4.16,
-    image: 'https://i.ebayimg.com/images/g/Vi0AAOSwQXlcPkMx/s-l1600.jpg'
+    image: 'https://i.ebayimg.com/images/g/Vi0AAOSwQXlcPkMx/s-l1600.jpg',
+    coords: { lat: 48.8534, lng: 2.3488 }
   },
   {
     id: 2,
@@ -51,7 +52,8 @@ const bnbData = [
     description:
       'Really nice hut in the forest. Be carrefull at night because of the wolves ... and also the neighbour that kidnapped my wife a couple of time',
     rating: 2.67,
-    image: 'https://images.unsplash.com/photo-1564429247506-322ee8fc5190?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+    image: 'https://images.unsplash.com/photo-1564429247506-322ee8fc5190?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+    coords: { lat: 49.460983, lng: 11.061859 }
   },
   {
     id: 5,
@@ -65,7 +67,8 @@ const bnbData = [
       'Rectangular hut with an open doorway onto the patio, the house backed onto the street. The neighbourhood is quiet except when the Hernán Cortés and his Spanish conquistadors have drinks outside.',
     rating: 3.9,
     image:
-      'https://images.unsplash.com/photo-1503187680590-525b6e7a793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80'
+      'https://images.unsplash.com/photo-1503187680590-525b6e7a793f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 6,
@@ -77,7 +80,8 @@ const bnbData = [
     isTaken: false,
     description: 'Beautiful house in Egypte with fantastic view with pyramids',
     rating: 4.48,
-    image: 'https://images.unsplash.com/photo-1557640047-75c97a5f1ea4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80'
+    image: 'https://images.unsplash.com/photo-1557640047-75c97a5f1ea4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 7,
@@ -90,7 +94,8 @@ const bnbData = [
     description: 'Nice modern flat in front of the Berlin Wall. Perfect place for celebration.',
     rating: 2.56,
     image:
-      'https://images.unsplash.com/photo-1600661991570-ccd9563faaaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+      'https://images.unsplash.com/photo-1600661991570-ccd9563faaaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 8,
@@ -103,7 +108,8 @@ const bnbData = [
     description:
       ' An inspiring place, Ryad Bahia is a place were you live, eat, sleep and relax. A fantastic place with 3 rooms, two minutes walk from the magic square of Jemaa Elfna  ',
     rating: 4.1,
-    image: 'https://images.unsplash.com/photo-1548018560-c7196548e84b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'
+    image: 'https://images.unsplash.com/photo-1548018560-c7196548e84b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 9,
@@ -117,7 +123,8 @@ const bnbData = [
       ' A big house with a fantsatic view sea view, just a five minutes to the Blue Mosque and Hagia Sofia  ',
     rating: 4.23,
     image:
-      'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1319&q=80'
+      'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1319&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 10,
@@ -129,7 +136,8 @@ const bnbData = [
     isTaken: false,
     description: 'Welcoming family in Nazareth. The house is not really big but the son washes feet very well.',
     rating: 3.76,
-    image: 'https://images.unsplash.com/photo-1581080565335-47b4b5e7abf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80'
+    image: 'https://images.unsplash.com/photo-1581080565335-47b4b5e7abf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 11,
@@ -141,7 +149,8 @@ const bnbData = [
     isTaken: false,
     description: '',
     rating: 4.9,
-    image: 'https://img.over-blog-kiwi.com/1/04/49/45/20181026/ob_6c1a3f_titanic-via-encyclopedia-titanica-2.jpg'
+    image: 'https://img.over-blog-kiwi.com/1/04/49/45/20181026/ob_6c1a3f_titanic-via-encyclopedia-titanica-2.jpg',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 12,
@@ -154,7 +163,8 @@ const bnbData = [
     description: '',
     rating: 1.2,
     image:
-      'https://images.unsplash.com/photo-1500231261460-8db8e9f334e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+      'https://images.unsplash.com/photo-1500231261460-8db8e9f334e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 13,
@@ -166,7 +176,8 @@ const bnbData = [
     isTaken: false,
     description: '',
     rating: 2.5,
-    image: 'https://images.unsplash.com/photo-1567583789793-87f44f80ab61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+    image: 'https://images.unsplash.com/photo-1567583789793-87f44f80ab61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+    coords: { lat: 0, lng: 0 }
   },
   {
     id: 14,
@@ -179,7 +190,8 @@ const bnbData = [
     description: '',
     rating: 3,
     image:
-      'https://www.cbc.ca/passionateeye/content/images/woodstock_1920.jpg'
+      'https://www.cbc.ca/passionateeye/content/images/woodstock_1920.jpg',
+    coords: { lat: 0, lng: 0 }
   }
 ];
 

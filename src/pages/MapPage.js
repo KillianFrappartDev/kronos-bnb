@@ -9,7 +9,6 @@ const TestPage = props => {
 
   const handleOpen = () => {
     setOpen(true);
-    console.log('KEY', process.env.REACT_APP_GOOLE_API);
   };
 
   const handleClose = () => {
