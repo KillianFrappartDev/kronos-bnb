@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
-import Logo from "./Logo.png"
-import Message from './Message'
-import { Button} from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-import '../styles/ModalCss.css'
 
+// Local imports
+import Logo from '../assets/kronos-logo2.png';
+import Message from './Message';
+import './Modal.css';
 
  class ModalBook extends Component {
      constructor(props) {
@@ -68,17 +69,5 @@ import '../styles/ModalCss.css'
             </div> 
         )
     }
-}
 
-export default ModalBook
-
-
-
-
-
-
-
-
-
-
-
+export default ModalBook;

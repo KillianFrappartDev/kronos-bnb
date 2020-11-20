@@ -1,4 +1,4 @@
-/* Split the screen in half */
+/* Split the screen in half /
 
 
 .split {
@@ -8,10 +8,9 @@
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-  
   }
-  
-  /* Control the left side */
+
+  / Control the left side /
   .left {
     left: 0;
     background-color: #0d0f22;
@@ -23,12 +22,13 @@
     overflow-x: hidden;
     padding-top: 20px;
     color: #d5d9e9;
-   
+
   }
 
   .text{
     text-align: right;
     padding: 20px; 
+    font-size: 25px;
   }
   .textH1{
     font-size: 90px;
@@ -37,12 +37,37 @@
   .book{
     text-align: center;
     font-size: 25px;
+    background-color: #ffc107; 
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
   }
-  .book:hover{
-   color: #7288eb;
+  .centeredBtn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
   }
-  
-  /* Control the right side */
+
+  .buttonBook {
+    background-color: #0d0f22;
+    color: #ffc107; 
+    border: 2px solid #ffc107;
+  }
+
+  .buttonBook:hover {
+    background-color:#ffc107;
+    color: black;
+  }
+
+  / Control the right side */
   .right {
     right: 0;
     height: 100%;
@@ -51,7 +76,7 @@
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-  
+
   }
 
   .imageRight{
@@ -61,6 +86,3 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
-  
-  

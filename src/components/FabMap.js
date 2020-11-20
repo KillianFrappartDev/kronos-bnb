@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   fab: {
     position: 'absolute',
+    zIndex: 999,
     bottom: 30,
     right: 30
   }

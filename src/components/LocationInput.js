@@ -16,11 +16,11 @@ const LocationInput = props => {
           id: 'location-native-simple'
         }}
       >
+        <option value="America">America</option>
         <option value="Asia">Asia</option>
         <option value="Africa">Africa</option>
-        <option value="Europa">Europa</option>
-        <option value="America">America</option>
-        <option value="Space">Space</option>
+        <option value="Europe">Europe</option>
+        <option value="Mars">Space</option>
       </NativeSelect>
     </FormControl>
   );
