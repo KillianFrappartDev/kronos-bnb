@@ -59,3 +59,5 @@ const HomePage = props => {
     </section>
   );
 };
+
+export default HomePage;

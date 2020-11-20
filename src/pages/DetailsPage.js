@@ -24,8 +24,7 @@ import '../styles/DetailsPage.css';
                       <h5>{currentCard[0].description}</h5>         
                   </div>
                 <div>
-                    <h3 className="book">BOOK NOW</h3>
-                      
+                  <button className="book buttonBook">BOOK NOW</button>                   
                 </div>    
                 </div>
           
@@ -35,6 +34,7 @@ import '../styles/DetailsPage.css';
                   </div>
                 </div>
               </div>
+              
           </>
         );
   };

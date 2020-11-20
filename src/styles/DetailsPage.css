@@ -37,9 +37,27 @@
   .book{
     text-align: center;
     font-size: 25px;
+    background-color: #ffc107; 
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
   }
-  .book:hover{
-   color: #7288eb;
+  .buttonBook {
+    background-color: #0d0f22;
+    color: #ffc107; 
+    border: 2px solid #ffc107;
+  }
+  
+  .buttonBook:hover {
+    background-color:#ffc107;
+    color: black;
   }
   
   /* Control the right side */
