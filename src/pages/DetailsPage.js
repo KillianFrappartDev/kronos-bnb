@@ -40,3 +40,4 @@ import '../styles/DetailsPage.css';
   };
   
 export default DetailsPage;
+
