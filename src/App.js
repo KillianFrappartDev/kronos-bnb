@@ -29,6 +29,20 @@ function App(props) {
     history.push("/Results");
   };
 
+  const filterData = () => {
+    if (travelData == null) {
+      return;
+    }
+    return bnbData.filter((item) => {
+      const dif = Math.abs(item.year - travelData.date);
+      if (dif <= 300 && item.continent === travelData.location) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  };
+
   return (
     <div className="App">
       <Switch>
@@ -40,7 +54,7 @@ function App(props) {
           </ThemeProvider>
         </Route>
         <Route path="/Results">
-          <ResultPage data={bnbData} />
+          <ResultPage data={filterData()} />
         </Route>
         <Route path="/DetailsPage/:id">
           <DetailsPage data={bnbData} />
