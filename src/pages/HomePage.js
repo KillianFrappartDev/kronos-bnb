@@ -51,7 +51,6 @@ const HomePage = props => {
       </Button>
     );
   }
-
   return (
     <section className="home__container">
       <header className="home__header">
