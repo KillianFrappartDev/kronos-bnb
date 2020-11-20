@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Component } from "react";
+import Card from "../components/Card";
 
- const ResultPage = (props) => {
-  return (
+class ResultPage extends Component {
+  render() {
+    return (
       <div>
-          <h1>Display a list of results matching criterias</h1>
+        <Card data={this.props.data} />
       </div>
-  )
+    );
+  }
 }
 
 export default ResultPage;
